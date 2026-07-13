@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stiles.login/login.css">
-    <title>Busc.ia|login</title>
+    <title>Busc.ia | login</title>
 </head>
 <body>
     <div class="box">
         <form action="">
                 <legend>Entrar</legend>
-                <p class="welcome">Bem-vindo de volta</p>
+                <p class="seja">Bem-vindo de volta</p>
                 <br>
                 <div class="inputbox">
-                    <input type="email" name="email" id="email" class="InputUser" required>
-                    <label for="email">Email</label>
+                    <input type="email" placeholder="  email" name="email" id="email" class="InputUser" required>
+                    <label for="email"></label>
                     <br><br>
                 </div>
                 <div class="inputbox">
-                    <input type="password" name="senha" id="senha" class="InputUser" required>
-                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="  senha" name="senha" id="senha" class="InputUser" required>
+                    <label for="senha"></label>
+                    <a href="esqueci" class="esqueci">
+                        esqueceu a sua senha ?
+                    </a>
                     <br><br>
                 </div>
-                <input type="submit"  name="submit" id="submit">
+                <button type="submit" id="submit">Entre</button>
+                <p class="se-torne">
+                    Não é um buscador ?
+                    <a href="cadastro.html" id="link_tornese">Se torne um</a>
+                </p>
         </form>
     </div>
 </body>
