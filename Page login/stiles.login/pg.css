@@ -3,12 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+U:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
 
-:root {
-
+:root{
     /* ===== Backgrounds ===== */
 
-    --bg-primary: #04091b;
-    --bg-secondary: #0F172A;
+    --bg-primary:#050816;
+    --bg-secondary: #0f172a;
 
     /* ===== Superfícies ===== */
 
@@ -49,13 +48,11 @@
 
     --transition: 0.3s ease;
 }
-
 body{
-    background-color: #050816;
-    color: #FFFFFF;
+    background-color: var(--bg-primary);
+    color: var(--text-light);
     font-family: "Inter", sans-serif;
 }
-
 .box{
     position: absolute;
     top: 50%;
@@ -64,7 +61,7 @@ body{
     padding: 20px;
     border-radius: 40px;
     width: 400px;
-    height: 350px;
+    height: 500px;
     background: radial-gradient(
          circle at top right,
          rgba(37, 99, 235, 0.25),
@@ -80,73 +77,76 @@ body{
          #0b143a,
          #0F172A
      );
-} 
-legend{
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .seja{
+    display: flex;
+    justify-content: center;
+    color: var(--text-primary);
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    color: var(--text-secondary);
-    margin-top: 5px;
+    font-size: 30px;
+}
+#logo{
+    background-color: var(--card);
+    padding: 5px;
+    border-radius: 15px;
+    position: absolute;
+    left: 25%;
+    top: 18%;
+    width: 30px;
+    height: 30px;
+}
+legend{
+   color:var(--primary) ;
+   display: flex;
+   justify-content: center;
+   font-family: "Archivo Black", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 30px;
+   margin-top: -25px;
+}
+.compraweb{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.InputUser{
-    background-color: var(--bg-primary);
-    font-family: "Poppins",sans-serif;
-    color: var(--text-light);
-    font-size: 15px;
-    border-radius: 15px;
-    border: none;
-}
-#email{
-    width: 400px;
-    height: 50px;
-    margin-top: -25px;
-}
-#senha{
-    width: 400px;
-    height: 50px;
-    margin-top: -25px;
-}
-#submit{
+#cadastre-se{
     background-image: linear-gradient(to right,#2563EB, #3B82F6);
     color: var(--text-light);
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
     height: 50px;
-    width: 200px;
+    width: 400px;
     border: none;
     border-radius: 15px;
     margin-top: 5px;
-    position: absolute;
-    left: 25%;
 }
-.esqueci{
-    font-size: 13px;
+#cadastre-se, a {
+    text-decoration: none;
+}
+#entrar{
     color: var(--text-light);
-    font-style: italic;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: none;
+    height: 50px;
+    width: 400px;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+#entrar, a{
     text-decoration: none;
 }
-.se-torne{
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    margin-top: 60px;
-    position: absolute;
-    left: 25%;
-}
-#link_tornese{
-    font-size: 13px;
-    color: var(--primary);
-    font-style: italic;
-    text-decoration: none;
+
+img{
+    position: relative;
+    left: 12%;
+    border-radius: 40px;
+    width: 300px;
+    height: 200px;
 }

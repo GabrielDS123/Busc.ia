@@ -7,8 +7,8 @@
 
     /* ===== Backgrounds ===== */
 
-    --bg-primary: #04091b;
-    --bg-secondary: #0F172A;
+    --bg-primary:#050816;
+    --bg-secondary: #0f172a;
 
     /* ===== Superfícies ===== */
 
@@ -60,7 +60,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 40px;
     width: 400px;
     height: 500px;
     background: radial-gradient(
